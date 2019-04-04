@@ -10,11 +10,32 @@ collections:
     label: "Posts"
     folder: "posts"
     create: true
+    format: "toml-frontmatter"
     slug: "{{slug}}"
     fields:
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Excerpt", name: "excerpt", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "date"}
       - {label: "Body", name: "body", widget: "markdown"}
-
+  - name: "services"
+    label: "Services"
+    folder: "services"
+    create: true
+    format: "toml-frontmatter"
+    slug: "{{slug}}"
+    fields:
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "URL", name: "url", widget: "string"}
+      - label: "Price Type"
+        name: "priceType"
+        widget: "select"
+        default: "Freemium"
+        options: ["Freemium", "Self-hosted", "Non Commercial", "Other"]
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        allow_add: false
+      - {label: "Date Added", name: "added", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Last Updated", name: "updated", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Body", name: "body", widget: "markdown"}
 #
