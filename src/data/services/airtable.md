@@ -3,7 +3,7 @@ title = "Airtable"
 url = "https://airtable.com/"
 priceType = "Freemium"
 tags = ["database", "spreadsheet"]
-added = 2019-04-03
+added = 2019-04-03T10:00:00Z
 +++
 It bills itself as part database and part spreadsheet, and you can certainly see elements of both as your get started with Airtable. Unlike many services which start to charge once you want to move beyond a single user, Airtable is free for teams to use, just limiting the size of each of your 'bases'. But with an unlimited number of bases, you can still do a lot without paying anything.
 
